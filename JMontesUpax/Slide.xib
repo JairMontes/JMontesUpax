@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="JMontesUpax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkS-mm-aXQ">
+                    <rect key="frame" x="16" y="79" width="361" height="210"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="210" id="ClB-w3-cLI"/>
+                        <constraint firstAttribute="width" constant="361" id="y6N-h3-NCs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="39"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJx-mj-3ao" customClass="PieChartView" customModule="DGCharts">
+                    <rect key="frame" x="47" y="297" width="299" height="240"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="299" id="Vf1-la-7Xi"/>
+                        <constraint firstAttribute="height" constant="240" id="rfq-u5-dBX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jJx-mj-3ao" firstAttribute="top" secondItem="RkS-mm-aXQ" secondAttribute="bottom" constant="8" symbolic="YES" id="FPI-av-K67"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RkS-mm-aXQ" secondAttribute="trailing" constant="16" id="RfP-h8-Bqv"/>
+                <constraint firstItem="RkS-mm-aXQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="SHO-lS-gnD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jJx-mj-3ao" secondAttribute="bottom" constant="281" id="n5e-Ok-3zp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jJx-mj-3ao" secondAttribute="trailing" constant="47" id="s9L-nt-if8"/>
+                <constraint firstItem="jJx-mj-3ao" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="47" id="voQ-5E-Ta1"/>
+                <constraint firstItem="RkS-mm-aXQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="zhe-My-m61"/>
+            </constraints>
+            <connections>
+                <outlet property="lblPregunta" destination="RkS-mm-aXQ" id="JEf-SS-iUO"/>
+                <outlet property="viewPie" destination="jJx-mj-3ao" id="6md-mP-cB1"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

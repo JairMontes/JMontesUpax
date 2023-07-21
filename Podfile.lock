@@ -1,0 +1,22 @@
+PODS:
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
+  - Hex (6.1.0)
+
+DEPENDENCIES:
+  - DGCharts
+  - Hex
+
+SPEC REPOS:
+  trunk:
+    - DGCharts
+    - Hex
+
+SPEC CHECKSUMS:
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
+  Hex: 2f67dd0cbb178cb24992e7529b025b8d16ff0bdc
+
+PODFILE CHECKSUM: 174fb53c1e748dcee9a3a81aec12b0f4676eb66b
+
+COCOAPODS: 1.8.4
